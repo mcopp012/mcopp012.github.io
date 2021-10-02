@@ -17,6 +17,7 @@
  
 <script>
  function getIframeContent(data) {
+  alert("frame content : ");
   var frameObj = document.getElementById(data);
   var frameContent = frameObj.contentWindow.document.body;
   alert("frame content : " + frameContent);
