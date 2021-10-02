@@ -15,16 +15,15 @@
 
 <a href="#" onclick="getIframeContent('data');"> Get the content of Iframe </a>
  
- <script>
+<script>
  function getIframeContent(data) {
   var frameObj = document.getElementById(data);
-  var frameContent = frameObj.contentWindow.document.body.innerHTML;
+  var frameContent = frameObj.contentWindow.document.body;
   alert("frame content : " + frameContent);
-  print("sdfsdfsdf: " + frameContent);
-}
+ }
 </script>
- 
- 
+
+
 <div class="">
  <h1>This is a Heading</h1>
  <p>This is a paragraph.</p>
