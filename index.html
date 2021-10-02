@@ -18,9 +18,8 @@
 <script>
  function getIframeContent(data) {
   var frameObj = document.getElementById(data);
-  var frameContent = frameObj.contentWindow;
   var x;
-  frameContent.postMessage(x,'*');
+  frameObj.contentWindow.postMessage(frameObj,'*');
  }
 </script>
 
