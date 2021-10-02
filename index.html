@@ -19,7 +19,7 @@
 <script>
  function getIframeContent(data) {
   var frameObj = document.getElementById('data');
-  var content = $(frameObj).contents();
+  var content = $(frameObj).contents().find("xls").html();
   alert("content: " + content);
  }
 </script>
